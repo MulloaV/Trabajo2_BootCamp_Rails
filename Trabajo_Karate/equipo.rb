@@ -5,6 +5,6 @@ class Equipo
     def initialize(codigo, nombre)
         @codigo = codigo
         @nombre = nombre
-        @participantes = Array.new(@codigo, @nombre)
+        @participantes = Array.new #codigo, nombre
     end
 end
