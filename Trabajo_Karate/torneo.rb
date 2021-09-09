@@ -1,4 +1,4 @@
-require_relative 'participantes'
+require_relative 'participantes' 
 require_relative 'equipo'
 
    
