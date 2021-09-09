@@ -1,9 +1,9 @@
 require_relative 'participantes'
 
-RSpec.describe Participantes
+RSpec.describe Participantes do
     context "Initialize class participantes" do
         before(:each) do
-            @participantes = Participantes.new 'K001','Juan',16,'48763625', 'verde', 2, 4,1
+            @participantes = Participantes.new 'K001','Juan',16,'48763625', 'verde', 2, 4,1,'KZ01'
         end
 
         it 'new' do
@@ -42,6 +42,6 @@ RSpec.describe Participantes
             expect(@participantes.partidasPerdidas).to eq(1)
         end
     end
-
+end
 
 

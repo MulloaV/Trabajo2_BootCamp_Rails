@@ -1,7 +1,7 @@
 require_relative 'equipo'
 require_relative 'participantes'
 
-RSpec.describe Equipo 
+RSpec.describe Equipo do
     context "Inizialize class Equipo" do
         before(:each) do
             @equipo = Equipo.new  'KK01', 'Karate Kid'
@@ -21,5 +21,5 @@ RSpec.describe Equipo
         end
 
     end
-
+end
     
