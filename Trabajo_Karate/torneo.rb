@@ -117,24 +117,23 @@ class Torneo
         return
       end
       puts "Participante: #{participantes.dni} - #{participantes.nombre} de #{participantes.edad} años. Puntaje actual : #{participantes.nuevoPuntaje}"   
-      # puts "    PG: #{participante.partidasGanadas}"
     end
     
   end
 
 
 torneo = Torneo.new
-torneo.registrarEquipo('EQ01', 'Karatecas Kids')
-torneo.registrarEquipo("EQ02", "Karatecas de Surco")
-torneo.registrarEquipo("EQ03", "Karatecas de Miraflores")
-torneo.registrarEquipo("EQ04", "Karatecas de San Miguel")
-torneo.registrarEquipo("EQ05", "Karatecas de San Borja")
-torneo.registrarEquipo("EQ06", "Karatecas de La Molina")
-torneo.registrarParticipante("COD01", "Jose Torres", 29, "46531738", "verde", 2, 4, 4, "EQ02")
-torneo.registrarParticipante("COD02", "Emilio Verastegui", 30, "46531740", "verde", 0, 4, 2, "EQ02")
-torneo.registrarParticipante("COD03", "Lorenzo Puente", 31, "46531742", "verde", 0, 4, 1, "EQ02")
-torneo.registrarParticipante("COD04", "Ricardo Rivero", 12, "53173800", "amarillo", 1, 2, 0, "EQ01")
-torneo.registrarParticipante("COD05", "Carlos Herrera", 25, "65331738", "marron", 10, 5, 0, "EQ03")  
+torneo.registrarEquipo('Equipo01', 'Karatecas Kids')
+torneo.registrarEquipo('Equipo02', "Karatecas de Surco")
+torneo.registrarEquipo('Equipo03', "Karatecas de Miraflores")
+torneo.registrarEquipo('Equipo04', "Karatecas de San Miguel")
+torneo.registrarEquipo('Equipo05', "Karatecas de San Borja")
+torneo.registrarEquipo('Equipo06', "Karatecas de La Molina")
+torneo.registrarParticipante("COD01", "Jose Torres", 29, "46531738", "verde", 2, 4, 4, 'Equipo03')
+torneo.registrarParticipante("COD02", "Emilio Verastegui", 30, "46531740", "verde", 0, 4, 2, 'Equipo02')
+torneo.registrarParticipante("COD03", "Lorenzo Puente", 31, "46531742", "verde", 0, 4, 1, 'Equipo02')
+torneo.registrarParticipante("COD04", "Ricardo Rivero", 12, "53173800", "amarillo", 1, 2, 0, 'Equipo01')
+torneo.registrarParticipante("COD05", "Carlos Herrera", 25, "65331738", "marron", 10, 5, 0, 'Equipo03')  
 
 
 
