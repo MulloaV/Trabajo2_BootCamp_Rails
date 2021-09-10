@@ -15,7 +15,7 @@ RSpec.describe Torneo do
             
         it 'obtenerEquipo' do 
             #expect(@torneo.obtenerEquipo).to eq('COD01', 'Jose Torres')
-            expect(@torneo.obtenerEquipo).to have_attributes(codigo: 'COD01',name: 'Jose Torres')
+            expect(@torneo.obtenerEquipo(@equipo.codigo)).to have_attributes(codigo: 'COD01')
         end
     end    
 end    
