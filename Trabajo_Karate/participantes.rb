@@ -1,5 +1,4 @@
-class Participantes 
-    
+class Participantes
 	attr_accessor :codigo, :nombre, :edad, :dni, :colorCinturon, :partidasGanadas, :partidasEmpatadas, :partidasPerdidas, :codEquipo
 	def initialize codigo, nombre, edad, dni, colorCinturon,partidasGanadas, partidasEmpatadas, partidasPerdidas, codEquipo
 		@codigo = codigo
@@ -19,6 +18,6 @@ class Participantes
 	end
 
 	def torneo
-		
-	end
+	end	
+	
 end    

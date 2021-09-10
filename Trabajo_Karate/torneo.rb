@@ -1,10 +1,9 @@
 require_relative 'participantes' 
 require_relative 'equipo'
 
-   
 class Torneo
   
-    def initialize()
+    def initialize #(equipos, participantes)
       @equipos = Array.new
       @participantes = Array.new
     end

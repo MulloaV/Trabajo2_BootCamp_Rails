@@ -7,4 +7,7 @@ class Equipo
         @nombre = nombre
         @participantes = Array.new #codigo, nombre
     end
+
+    
 end
+
