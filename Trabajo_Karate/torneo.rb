@@ -1,14 +1,16 @@
 require_relative 'participantes' 
 require_relative 'equipo'
 
+
 class Torneo
+  attr_accessor :codigo, :nombre, :edad, :dni, :colorCinturon, :partidasGanadas, :partidasEmpatadas, :partidasPerdidas, :codEquipo, :participantes, :equipos
   
     def initialize #(equipos, participantes)
       @equipos = Array.new
       @participantes = Array.new
     end
     
-    def obtenerEquipo(codigo, nombre)
+    def obtenerEquipo(codigo,nombre)
       for equipo in @equipos
         if equipo.codigo == codigo
           return equipo
@@ -122,43 +124,48 @@ class Torneo
 
 
 torneo = Torneo.new
-torneo.registrarEquipo('Equipo01', 'Karatecas Kids')
-torneo.registrarEquipo('Equipo02', "Karatecas de Surco")
-torneo.registrarEquipo('Equipo03', "Karatecas de Miraflores")
-torneo.registrarEquipo('Equipo04', "Karatecas de San Miguel")
-torneo.registrarEquipo('Equipo05', "Karatecas de San Borja")
-torneo.registrarEquipo('Equipo06', "Karatecas de La Molina")
-torneo.registrarParticipante("COD01", "Jose Torres", 29, "46531738", "verde", 2, 4, 4, 'Equipo03')
-torneo.registrarParticipante("COD02", "Emilio Verastegui", 30, "46531740", "verde", 0, 4, 2, 'Equipo02')
-torneo.registrarParticipante("COD03", "Lorenzo Puente", 31, "46531742", "verde", 0, 4, 1, 'Equipo02')
-torneo.registrarParticipante("COD04", "Ricardo Rivero", 12, "53173800", "amarillo", 1, 2, 0, 'Equipo01')
-torneo.registrarParticipante("COD05", "Carlos Herrera", 25, "65331738", "marron", 10, 5, 0, 'Equipo03')  
+torneo.registrarEquipo('Equipo01', 'La Florida')
+torneo.registrarEquipo('Equipo02', 'Santiago Centro')
+torneo.registrarEquipo('Equipo03', 'Providencia')
+torneo.registrarEquipo('Equipo04', 'San Miguel')
+torneo.registrarEquipo('Equipo05', 'Macul')
+torneo.registrarEquipo('Equipo06', 'Nunoa')
+torneo.registrarParticipante("COD01", 'Carlos Pastene', 17, "46531738", "verde", 2, 4, 4, 'Equipo03')
+torneo.registrarParticipante("COD02", 'Julio Loaiza', 20, "46531740", "verde", 0, 4, 2, 'Equipo02')
+torneo.registrarParticipante("COD03", "Cristian Vega", 31, "46531742", "negro", 0, 4, 1, 'Equipo02')
+torneo.registrarParticipante("COD04", 'Marisol Contreras', 18, "53173800", "amarillo", 1, 2, 0, 'Equipo01')
+torneo.registrarParticipante("COD05", 'Bastian Salinas', 25, "65331738", "marron", 10, 5, 0, 'Equipo03')  
 
 
 
 
 # a
+puts 'Prueba A'
 participanteA = torneo.obtenerParticipantes("46531738")
 torneo.imprimirInfoParticipantes(participanteA)
 
 
 # b
+puts 'Prueba B'
 ganadorTorneo = torneo.ganador()
 torneo.imprimirInfoParticipantes(ganadorTorneo)
 
 
 # c
+puts 'Prueba C'
 torneo.actualizarPartidasGanadas("53173800", 30)
 participanteB = torneo.obtenerParticipantes("53173800")
 torneo.imprimirInfoParticipantes(participanteB)
 
 
 #d
+puts 'Prueba D'
 puts
 torneo.tablaPosiciones()
 
 
 #e
+puts 'Prueba E'
 puts
 torneo.listarEquipos()
 
