@@ -12,8 +12,7 @@ RSpec.describe Participantes do
         it 'codigo' do
             expect(@participantes.codigo).to eq('K001')            
         end
-        
-        
+                
         it 'nombre' do
             expect(@participantes.nombre).to eq('Juan')
         end
