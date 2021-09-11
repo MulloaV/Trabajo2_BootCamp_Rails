@@ -135,8 +135,8 @@ torneo.registrarParticipante("COD02", 'Julio Loaiza', 20, "46531740", "verde", 0
 torneo.registrarParticipante("COD03", "Cristian Vega", 31, "46531742", "negro", 0, 4, 1, 'Equipo02')
 torneo.registrarParticipante("COD04", 'Marisol Contreras', 18, "53173800", "amarillo", 1, 2, 0, 'Equipo01')
 torneo.registrarParticipante("COD05", 'Bastian Salinas', 25, "65331738", "marron", 10, 5, 0, 'Equipo03')  
-
-
+torneo.registrarParticipante("COD06", 'Pedro Urrutia', 29, "65332328", "azul", 3, 5, 0, 'Equipo04')  
+torneo.registrarParticipante("COD07", 'Valentina Mendoza', 19, "654235638", "blanco", 1,6 0, 'Equipo05')  
 
 
 # a
